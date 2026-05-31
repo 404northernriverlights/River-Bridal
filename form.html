@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Bridal - Book An Appointment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <nav class="navbar">
+            <a href="collection.html" class="nav-btn">Collection</a>
+            <a href="form.html" class="nav-btn btn-active">Book Appointment</a>
+        </nav>
+        <h1 class="hero-title">River Bridal</h1>
+    </header>
+
+    <main class="form-container">
+        
+        <h2 class="main-title">Book An Appointment</h2>
+
+        <div class="form-card">
+            <p class="form-instruction">
+                Please complete the form below to arrange your<br>
+                exclusive consultation at our boutique
+            </p>
+
+            <form action="thankyou.html" method="GET">
+                
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="...." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="...." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="...." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="service">Service Type</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected hidden>....</option>
+                        <option value="Custom Dress">Custom Dress</option>
+                        <option value="Fitting Session">Fitting Session</option>
+                        <option value="Bridal Consultation">Bridal Consultation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Preferred Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Preferred Time</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Notes</label>
+                    <textarea id="notes" name="notes" placeholder="...."></textarea>
+                </div>
+
+                <div class="form-submit-wrapper">
+                    <button type="submit" class="btn-submit">SUBMIT</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>RIVER BRIDAL</h3>
+                <p>River Bridal<br>Jl. Setiabudi No. 17<br>Bandung 40141<br>West Java, Indonesia</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Collection</h4>
+                <ul>
+                    <li><a href="collection.html">A-Line Dresses</a></li>
+                    <li><a href="collection.html">Ball Gown</a></li>
+                    <li><a href="collection.html">Mermaid</a></li>
+                    <li><a href="collection.html">Trumpet</a></li>
+                    <li><a href="collection.html">Custom Dress</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Custom Dress</a></li>
+                    <li><a href="#">Fitting Session</a></li>
+                    <li><a href="#">Bridal Consultation</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <p>Email: riverbridal@email.com</p>
+                <p>Instagram: @riverbridal</p>
+                <p>Phone: +62 812 444 129 000</p>
+            </div>
+        </div>
+        <div class="footer-bottom"></div>
+    </footer>
+
+<script>
+    // Ambil form dan tombol submit
+    const formPernikahan = document.querySelector('form');
+    const tombolSubmit = document.querySelector('button[type="submit"]');
+
+    // Saat form disubmit
+    formPernikahan.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Efek loading
+        tombolSubmit.innerText = "PROCESSING...";
+        tombolSubmit.style.opacity = "0.6";
+        tombolSubmit.style.cursor = "not-allowed";
+
+        // Tunggu 1.5 detik lalu pindah halaman
+        setTimeout(() => {
+            window.location.href = formPernikahan.getAttribute('action');
+        }, 1500);
+    });
+</script>
+
+
+
+</body>
+</html>
