@@ -1,6 +1,4 @@
-/* ==========================================================================
-   0. RESET & BASE GLOBAL STYLES (Dipakai di Semua Halaman)
-   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,12 +12,11 @@ body {
     overflow-x: hidden;
 }
 
-/* --- HERO BANNER & NAVBAR (Global) --- */
 .hero {
     position: relative;
     width: 100%;
     height: 450px;
-    background-image: url(hero.png); /* Ganti dengan link gambar kolase utama Anda */
+    background-image: url(hero.png); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -76,9 +73,6 @@ body {
 }
 
 
-/* ==========================================================================
-   1. DESKTOP 1: LANDING PAGE / HOME STYLES
-   ========================================================================== */
 .main-content {
     max-width: 1300px;
     margin: 100px auto 140px auto;
@@ -89,7 +83,7 @@ body {
     gap: 40px;
 }
 
-/* Tumpukan 3 Foto Kiri */
+
 .photo-stack {
     position: relative;
     width: 650px;
@@ -138,7 +132,7 @@ body {
     transform: scale(1.03);
 }
 
-/* Kotak Teks Deskripsi Kanan (Melengkung Cantik) */
+
 .brand-description-box {
     flex-grow: 1;
     background-color: #F8F7F3;
@@ -172,9 +166,7 @@ body {
 }
 
 
-/* ==========================================================================
-   2. DESKTOP 2: OUR COLLECTION STYLES
-   ========================================================================== */
+
 .collection-container {
     max-width: 1200px;
     margin: 60px auto 100px auto;
@@ -190,7 +182,7 @@ body {
     margin-bottom: 60px;
 }
 
-/* Baris Item Gaun */
+
 .collection-item {
     display: flex;
     align-items: center;
@@ -212,7 +204,7 @@ body {
     display: block;
 }
 
-/* Card Deskripsi Putih */
+
 .details-box {
     flex-grow: 1;
     background-color: #FFFFFF;
@@ -250,7 +242,7 @@ body {
     max-width: 70%;
 }
 
-/* Lingkaran Pilihan Warna */
+
 .color-options {
     display: flex;
     gap: 15px;
@@ -271,16 +263,14 @@ body {
 .color-offwhite { background-color: #F8F7F3; }
 
 
-/* ==========================================================================
-   3. DESKTOP 3: BOOK AN APPOINTMENT (PERBAIKAN FORM TOTAL)
-   ========================================================================== */
+
 .form-container {
     max-width: 1100px; /* Pengunci lebar form biar tidak melar selayar laptop */
     margin: 60px auto 100px auto;
     padding: 0 20px;
 }
 
-/* Kotak Form Putih Utama */
+
 .form-card {
     background-color: #FFFFFF;
     border-radius: 50px;
@@ -310,7 +300,7 @@ body {
     margin-bottom: 12px;
 }
 
-/* Perbaikan penanganan input, dropdown select, dan text-area */
+
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -330,7 +320,7 @@ body {
     min-height: 140px;
 }
 
-/* Wrapper Tombol Submit Form Tengah */
+
 .form-submit-wrapper {
     display: flex;
     justify-content: center;
@@ -356,16 +346,14 @@ body {
 }
 
 
-/* ==========================================================================
-   4. DESKTOP 4: THANK YOU / SUCCESS PAGE STYLES (PERBAIKAN TOTAL)
-   ========================================================================== */
+
 .success-container {
     max-width: 1200px;
     margin: 60px auto 100px auto;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Membuat semua konten otomatis di tengah */
+    align-items: center;
     width: 100%;
 }
 
@@ -390,7 +378,7 @@ body {
     margin-top: -10px;
 }
 
-/* Lingkaran Cokelat Pembungkus Centang */
+
 .checkmark-wrapper {
     margin-bottom: 50px;
     display: flex;
@@ -398,9 +386,7 @@ body {
     width: 100%;
 }
 
-/* ==========================================================================
-   PERBAIKAN PRESISI POSISI & BENTUK CENTANG DI TENGAH LINGKARAN
-   ========================================================================== */
+
 .checkmark-circle {
     width: 260px;
     height: 260px;
@@ -411,34 +397,34 @@ body {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Mengatur posisi batang pendek kiri */
+
 .checkmark-stem {
     position: absolute;
     width: 24px;
-    height: 60px; /* Ditambah sedikit agar sambungan lebih tebal */
+    height: 60px;
     background-color: #FFFFFF;
-    left: 80px;  /* Geser sedikit ke kanan */
-    top: 100px;  /* Naikin sedikit ke atas */
+    left: 80px;  
+    top: 100px;  
     transform: rotate(-45deg);
     transform-origin: left bottom;
     border-radius: 5px;
 }
 
-/* Mengatur posisi batang panjang kanan */
+
 .checkmark-kick {
     position: absolute;
-    width: 110px; /* Disesuaikan panjangnya */
+    width: 110px; 
     height: 24px;
     background-color: #FFFFFF;
-    left: 80px;  /* Samakan titik tumpu kirinya */
-    top: 136px;  /* Naikkan posisi agar tidak terlalu rendah */
+    left: 80px; 
+    top: 136px;  
     transform: rotate(-45deg);
     transform-origin: left top;
     border-radius: 5px;
 }
 
 
-/* Teks Status Utama (Diposisikan Tengah & Lebar Pas) */
+
 .status-message {
     font-size: 26px;
     font-weight: 500;
@@ -448,10 +434,10 @@ body {
     width: 100%;
     max-width: 950px;
     margin-bottom: 60px;
-    display: block; /* Memaksa teks kembali normal tidak menyusut */
+    display: block;
 }
 
-/* Kotak Quote Putih */
+
 .quote-box {
     width: 100%;
     max-width: 1000px;
@@ -497,7 +483,7 @@ body {
     line-height: 1.6;
 }
 
-/* Area Tombol Aksi */
+
 .action-buttons {
     width: 100%;
     max-width: 1000px;
@@ -540,9 +526,7 @@ body {
 }
 
 
-/* ==========================================================================
-   5. FOOTER SECTION STYLES (Dipakai di Semua Halaman)
-   ========================================================================== */
+
 .footer {
     background-color: #FFFFFF;
     padding-top: 40px;
@@ -582,9 +566,7 @@ body {
 }
 
 
-/* ==========================================================================
-   6. RESPONSIVE LAYOUT (Tablet & Mobile Global)
-   ========================================================================== */
+
 @media (max-width: 1100px) {
     /* Home View */
     .main-content { flex-direction: column; margin: 60px auto; }
@@ -595,20 +577,20 @@ body {
     .brand-description-box { max-width: 100%; border-radius: 40px; padding: 40px 30px; min-height: auto; }
     .hero-title { font-size: 60px; }
 
-    /* Collection View */
+   
     .collection-item { flex-direction: column; align-items: center; }
     .box-content { flex-direction: column; text-align: center; padding: 20px; }
     .description { max-width: 100%; font-size: 16px; }
     .main-title { font-size: 44px; }
 
-    /* Form View */
+    
     .form-card { padding: 40px 30px; border-radius: 30px; }
     .form-instruction { font-size: 20px; }
     .form-group label { font-size: 18px; }
     .form-group input, .form-group select, .form-group textarea { font-size: 16px; }
     .btn-submit { width: 100%; padding: 15px 0; }
 
-    /* Thank You View */
+   
     .title-thankyou { font-size: 64px; }
     .title-booking { font-size: 50px; }
     .checkmark-circle { width: 214.91px; height: 159.51px; }
@@ -619,6 +601,6 @@ body {
     .quote-text { font-size: 16px; }
     .btn { font-size: 18px; padding: 15px 0; }
     
-    /* Footer View */
+    
     .footer-content { flex-direction: column; }
 }
