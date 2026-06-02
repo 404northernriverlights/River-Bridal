@@ -127,12 +127,12 @@
     formPernikahan.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        // Efek loading
+        
         tombolSubmit.innerText = "PROCESSING...";
         tombolSubmit.style.opacity = "0.6";
         tombolSubmit.style.cursor = "not-allowed";
 
-        // Tunggu 1.5 detik lalu pindah halaman
+        
         setTimeout(() => {
             window.location.href = formPernikahan.getAttribute('action');
         }, 1500);
